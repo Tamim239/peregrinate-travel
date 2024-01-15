@@ -1,10 +1,297 @@
-*{
+/* shared style */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900;1000&display=swap');
+
+:root {
+    --primary-color: #131318;
+    --background: #FF5400;
+}
+
+.text-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+
+}
+
+.text-title2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.btn-primary {
+    color: #FFF;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 8px;
+    background: #FF5400;
+    cursor: pointer;
+}
+
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
+}
+
+/* header style */
+header {
+    width: 80%;
+    margin: 20px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nav-logo-title {
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+nav>ul i {
+    display: none;
+
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+.travel-container {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 16px;
+}
+
+.travel-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.travel-description {
+    color: #FFF;
+    margin: 20px 0;
+    width: 50%;
+}
+
+.input-field {
+    display: inline-flex;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    gap: 20px;
+    position: relative;
+}
+
+.input-field input,
+.btn-primary {
+    padding: 15px;
+    border-radius: 8px;
+    border: 0;
+
+
+}
+
+
+.input-field>.when i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    font-size: 1.5rem;
+}
+
+.input-field>.select i {
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translate(-24%, -50%);
+    opacity: 0.6;
+    font-size: 1.5rem;
+}
+
+.btn-primary i {
+    padding: 0 5px;
+}
+
+/* popular tours section */
+.popular-tours-container {
+    width: 90%;
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    gap: 50px;
+}
+
+.popular-tours-container p,
+li {
+    color: rgba(19, 19, 24, 0.70);
+    padding: 0 10px;
+    margin-top: 25px;
+}
+
+.popular-tours-colum>ul li {
+    margin-left: 30px;
+}
+
+.popular-tours-colum .tours-description {
+    color: #5A5A5D;
+    margin-bottom: 20px;
+}
+
+.popular-tours-colum .tour-btn {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.popular-tours-colum img {
+    border-radius: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop responsive */
+@media screen and (min-width:992px) {
+    header {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+/* tablet */
+@media screen and (max-width:991px) {
+    header {
+        width: 100%;
+    }
+    .popular-tours-container {
+        width: 100%;
+        margin: 10px;
+  flex-direction: column;
+    }
+
+}
+
+
+
+
+/* mobile responsive */
+@media screen and (max-width:600px) {
+
+    nav>ul>li {
+        display: none;
+    }
+
+    nav>ul i {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .travel-title {
+        font-size: 1.5rem;
+    }
+
+    .travel-description {
+        width: 100%;
+    }
+
+    .input-field , .popular-tours-container {
+        flex-direction: column;
+    }
+
+    .input-field>.when i {
+        top: 38%;
+        left: 79%;
+    }
+
+    .input-field>.select i {
+        top: 62%;
+        left: 76%;
+    }
+
+    .popular-tours-container {
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        padding: 20px;
+        margin: 30px auto;
+
+    }
+
+    .popular-tours-colum img {
+        width: 100%;
+    }
+
 }
