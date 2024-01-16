@@ -49,7 +49,7 @@ header {
     margin: 20px auto;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -379,12 +379,12 @@ li {
     color: #5A5A5D;
 }
 
- .image-content-description {
+.image-content-description {
     color: #5A5A5D;
     margin: 10px 0;
 }
 
- .price {
+.price {
     color: #FF5400;
     font-size: 20px;
     font-weight: 800;
@@ -405,8 +405,9 @@ li {
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
+
 .image-content2 {
     width: 45%;
     border-radius: 16px;
@@ -436,9 +437,9 @@ li {
     margin-bottom: 20px;
 }
 
- .all-pack-btn{
-   position: relative;
-   left: 45%;
+.all-pack-btn {
+    position: relative;
+    left: 45%;
 
 }
 
@@ -452,24 +453,107 @@ li {
     gap: 20px;
 }
 
-.perfect-place-colum-1{
-  width: 45%;
-  margin-bottom: 20px;
-    
+.perfect-place-colum-1 {
+    width: 45%;
+    margin-bottom: 20px;
+
 }
+
 .perfect-place-colum-1 p {
     color: #5A5A5D;
     margin-top: 10px;
 }
-.perfect-place-colum-1 > ul {
+
+.perfect-place-colum-1>ul {
     margin-left: 20px;
 }
+
 .perfect-place-colum-1 li {
     color: #131318;
     margin-bottom: 20px;
 }
 
+/* newsletter section */
+.newsletter-container {
+    width: 90%;
+    padding: 40px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
 
+.newsletter-column-1 {
+    width: 50%;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px ;
+}
+
+.newsletter-column-1 .newsletter-description {
+    width: 70%;
+    color: #5A5A5D;
+    margin: 15px 0;
+}
+
+.newsletter-column-1 input {
+    display: block;
+    width: 90%;
+    padding: 15px 32px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.30);
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+
+.newsletter-column-1 button {
+    width: 90%;
+}
+
+
+.newsletter-column-2 {
+    height: 350px;
+    width: 50%;
+    background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.newsletter-image-content {
+    width: 40%;
+    padding: 10px;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    position: relative;
+    transform-origin: left bottom;
+    top: 77%;
+    left: 63%;
+    transform: rotate(-20deg);
+
+}
+
+.newsletter-sub-title {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.newsletter-title {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+/* footer section */
+.footer-container {
+    background: rgba(19, 19, 24, 0.05);
+}
 
 
 
@@ -544,13 +628,18 @@ li {
     .destination-description,
     .choose-us-container,
     .header-description,
-    .row-content-3, .discount-description, .image-content, .image-content2 , .perfect-place-colum-1{
+    .row-content-3,
+    .discount-description,
+    .image-content,
+    .image-content2,
+    .perfect-place-colum-1, .newsletter-column-1, .newsletter-column-1 .newsletter-description, .newsletter-column-2 {
         width: 100%;
     }
 
     .input-field,
     .popular-tours-container,
-    .row-content, .perfect-place-container  {
+    .row-content,
+    .perfect-place-container, .newsletter-container {
         flex-direction: column;
     }
 
@@ -620,25 +709,44 @@ li {
     .discount-container {
         margin-top: 30px;
     }
+
     .text-title {
         font-size: 2rem;
     }
-    .discount-images-1, .discount-images-2, .discount-images-3 {
+
+    .discount-images-1,
+    .discount-images-2,
+    .discount-images-3 {
         padding: 0 10px;
     }
-    .image-content, .image-content2 {
+
+    .image-content,
+    .image-content2 {
         top: 25%;
         left: 0;
         padding: 20px;
     }
+
     .all-pack-btn {
         left: 20%;
     }
+
     .perfect-place-container {
         margin: 30px auto;
     }
+
     .perfect-place-colum-2 iframe {
         width: 100%;
         border-radius: 16px;
+    }
+    .newsletter-container {
+        padding: 0;
+    }
+    .newsletter-column-1 {
+        padding: 20px ;
+    }
+    .newsletter-image-content {
+        width: 80%;
+        left: 26%;
     }
 }
